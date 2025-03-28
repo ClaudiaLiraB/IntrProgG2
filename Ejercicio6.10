@@ -1,0 +1,17 @@
+Algoritmo DescuentoCompraMultiplesProductos
+    Definir cantidadProductos, i Como Entero
+    Definir precioUnitario, totalCompra, descuento, montoFinal Como Real
+    Escribir "Ingrese la cantidad total de productos:"
+    Leer cantidadProductos
+    totalCompra = 0 
+    Para i = 1 Hasta cantidadProductos Hacer
+        Escribir "Ingrese el precio unitario del producto ", i, ":"
+        Leer precioUnitario
+        totalCompra = totalCompra + precioUnitario
+    FinPara
+    descuento = totalCompra * 0.1
+    montoFinal = totalCompra - descuento
+    Escribir "El monto total de la compra es: ", totalCompra
+    Escribir "El descuento aplicado (10%) es: ", descuento
+    Escribir "El monto final a pagar es: ", montoFinal
+FinAlgoritmo
